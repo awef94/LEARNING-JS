@@ -33,7 +33,7 @@ function FirstNum() {
   и на основе типа данных выдаёт одно из двух сообщений в консоль.
   */
 
-  first = parseInt(prompt('Введите возраст доступа:'));
+  first = parseInt(prompt('Введите возраст доступа:', 'Введите возраст доступа:'));
 
   if(typeof(first) != "number" || isNaN(first) == true){
     console.log('Всё катится в пизду!')
@@ -49,7 +49,7 @@ function SecondNum() {
   и на основе типа данных выдаёт одно из двух сообщений в консоль.
   */
 
-  second = parseInt(prompt('Введите свой возраст:'));
+  second = parseInt(prompt('Введите свой возраст:', 'Введите свой возраст:'));
 
   if(typeof(second) != "number" || isNaN(second) == true){
     console.log('Всё катится в пизду!')
