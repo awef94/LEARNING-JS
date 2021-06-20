@@ -14,13 +14,13 @@ while (typeof(second) != "number" || isNaN(second) == true) {
   SecondNum();
   }
   if(first > second){
-    alert('Топай отсюда, мальчик!!!');
+    alert('Топай отсюда, мальчик!!! >:()');
   }
   else if(first < second){
     alert('Проходи! Наркота на центральном столе!');
   }
   else {
-    alert('Ай, блять! Не попал! >:(')
+    alert('Ай, блять! Не попал! D:')
   }
 }
 
