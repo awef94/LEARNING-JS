@@ -15,7 +15,7 @@ while (second2 != "number" || second3 == true) {
   }
 
   if(first > second){
-    alert('Сасай, ты не у дел');
+    alert('Сасай, ты не у дел :D');
   }
   else if(first < second){
     alert('Красавчик! Бухло и шлюхи твои!');
