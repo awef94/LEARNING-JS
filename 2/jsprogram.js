@@ -33,7 +33,7 @@ function FirstNum() {
   first = parseInt(prompt('Введите возраст доступа:', 'Позови маму!'));
 
   if(typeof(first) != "number" || isNaN(first) == true){
-    console.log('Всё катится в пизду!')
+    console.log('Всё летит в пизду!')
   }
   else {
     console.log('И всё идёт по плану!')
@@ -49,7 +49,7 @@ function SecondNum() {
   second = parseInt(prompt('Введите свой возраст:', 'Не пизди мне тут!'));
 
   if(typeof(second) != "number" || isNaN(second) == true){
-    console.log('Всё катится в пизду!')
+    console.log('Всё летит в пизду!')
   }
   else {
     console.log('И всё идёт по плану!')
