@@ -1,47 +1,55 @@
 var first = null;
 var second = null;
-var first2 = null;
-var second2 = null;
-var first3 = null;
-var second3 = null;
 
 function Start() {
-
-while (first2 != "number" || first3 == true) {
+/*
+Этот блок кода запускает два метода до бесконечности,
+пока не получит число (NaN исключается),
+после чего на основе полученых данных выдаёт одно из треёх вариантов сообщений.
+*/
+while (typeof(first) != "number" || isNaN(first) == true) {
   FirstNum();
   }
-while (second2 != "number" || second3 == true) {
+while (typeof(second) != "number" || isNaN(second) == true) {
   SecondNum();
   }
-
   if(first > second){
-    alert('Сасай, ты не у дел');
+    alert('Топай отсюда, мальчик!!!');
   }
   else if(first < second){
-    alert('Красавчик! Бухло и шлюхи твои!');
+    alert('Проходи! Наркота на центральном столе!');
   }
   else {
     alert('Ай, блять! Не попал! >:(')
   }
 }
 
+
 function FirstNum() {
-  first = parseInt(prompt('Введите возраст доступа:'));
-  first2 = typeof first;
-  first3 = isNaN(first);
-  if(first2 != "number" || first3 == true){
-    console.log('Всё катится в пизду!')
+  /*
+  Этот блок кода запрашивает возраст доступа от пользователя, парсит в int
+  и на основе типа данных выдаёт одно из двух сообщений в консоль.
+  */
+  first = parseInt(prompt('Введите возраст доступа:', 'Позови маму!'));
+
+  if(typeof(first) != "number" || isNaN(first) == true){
+    console.log('Всё летит в пизду!')
   }
   else {
     console.log('И всё идёт по плану!')
   }
 }
+
+
 function SecondNum() {
-  second = parseInt(prompt('Введите свой возраст'));
-  second2 = typeof second;
-  second3 = isNaN(second);
-  if(second2 != "number" || second3 == true){
-    console.log('Всё катится в пизду!')
+  /*
+  Этот блок кода запрашивает возраст от пользователя, парсит в int
+  и на основе типа данных выдаёт одно из двух сообщений в консоль.
+  */
+  second = parseInt(prompt('Введите свой возраст:', 'Не пизди мне тут!'));
+
+  if(typeof(second) != "number" || isNaN(second) == true){
+    console.log('Всё летит в пизду!')
   }
   else {
     console.log('И всё идёт по плану!')
