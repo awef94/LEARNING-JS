@@ -1,5 +1,5 @@
-var first = null;
-var second = null;
+let first = null;
+let second = null;
 
 function Start() {
 /*
