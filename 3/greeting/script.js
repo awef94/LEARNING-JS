@@ -1,29 +1,23 @@
 function Start(){
-let firstName = null;
-let lastName = null;
-let age = null;
 
-let firstInput = document.getElementById('fn');
-let lastInput = document.getElementById('ln');
-let inputAge = document.getElementById('age');
+let firstInput = document.getElementById('fn').value;
+let lastInput = document.getElementById('ln').value;
+let inputAge = document.getElementById('age').value;
 
-if(firstInput.value == ''){
-firstName = 'Тупой';
+if(firstInput == ''){
+firstInput = 'Тупой';
 }
 else{
-  firstName = firstInput.value;
 }
-if(lastInput.value == ''){
+if(lastInput == ''){
   lastName = 'Хуй';
 }
 else{
-  lastName = lastInput.value;
 }
 if(inputAge.value == ''){
   age = 3000;
 }
 else{
-  age = inputAge.value;
 }
 
 alert('Привет! Меня зовут ' + firstName + ' ' + lastName + ' и мне ' + age + ' лет!');
