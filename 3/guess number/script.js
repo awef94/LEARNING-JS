@@ -3,7 +3,7 @@ let counter = 0;
 console.log(randomNum);
 
 function Game(){
-  let buttonInner = document.getElementById('trybutton').value;
+  let buttonInner = document.getElementById('trybutton').innerHTML;
   let guessNum = document.getElementById('try').value;
   let winMessage = document.getElementById('message').innerHTML;
 
@@ -28,7 +28,6 @@ if(buttonInner == 'Попробовать!'){
   else{
       document.getElementById('message').innerHTML='Красава, в точку!';
       document.getElementById('trybutton').innerHTML='Новая игра';
-      document.getElementById('trybutton').value='Новая игра';
       counter++;
       document.getElementById('counter').innerHTML=`Попыток: ${counter}`;
       }
@@ -39,7 +38,6 @@ if(buttonInner == 'Попробовать!'){
     document.getElementById('try').value='';
     document.getElementById('trybutton').innerHTML='Попробовать!';
     document.getElementById('message').innerHTML='Начинай!'
-    document.getElementById('trybutton').value='Попробовать!';
     counter = 0;
     document.getElementById('counter').innerHTML=`Попыток: ${counter}`;
   }
