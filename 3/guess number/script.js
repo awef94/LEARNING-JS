@@ -1,7 +1,5 @@
 let randomNum = parseInt(Math.random() * (10 - 0 + 1) + 0);
 console.log(randomNum);
-let trying = null;
-let newGame = null;
 
 function Game(){
   let buttonInner = document.getElementById('trybutton').value;
