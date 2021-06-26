@@ -35,7 +35,7 @@ let car10 = {
 }
 
 let car20 = {
-  
+
 }
 
 function printObjects(obj) {
@@ -56,3 +56,47 @@ function copyObjects(obj1, obj2) {
 printObjects(car2);
 console.log('');
 printObjects(car);
+
+let mass = ['lada', 'gaz', 'raf', 'moskvich'];
+
+console.log(mass[0]);
+console.log(mass[1]);
+console.log(mass[2]);
+console.log(mass[3]);
+
+console.log(mass);
+
+console.log(mass.length);
+mass.push('zaz');
+console.log(mass.length);
+
+for(let i = 0; i<mass.length; i++){
+  console.log(mass[i]);
+}
+
+let cars = [
+{
+  mark: 'lada',
+  model: 'vesta'
+},
+{
+  mark: 'zaz',
+  model: 968
+},
+{
+  mark: 'gaz',
+  model: 'volga'
+},
+{
+  mark: 'moskvich',
+  model: 408
+}
+];
+
+console.log(cars);
+
+function printCars(obj) {
+  for(let i = 0; i<obj.length; i++){
+    console.log(obj[i].mark + ' - ' + obj[i].model);
+  }
+}
