@@ -1,4 +1,4 @@
-let randomNum = parseInt(Math.random() * (10 - 0 + 1) + 0);
+let randomNum = Math.round(Math.random() * 10);
 let counter = 0;
 console.log(randomNum);
 
