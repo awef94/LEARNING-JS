@@ -15,10 +15,10 @@ if(lastInput == ''){
 else{
 }
 if(inputAge.value == ''){
-  age = 3000;
+  inputAge = 3000;
 }
 else{
 }
 
-alert('Привет! Меня зовут ' + firstName + ' ' + lastName + ' и мне ' + age + ' лет!');
+alert('Привет! Меня зовут ' + firstInput + ' ' + lastInput + ' и мне ' + inputAge + ' лет!');
 }
