@@ -1,7 +1,6 @@
 function Start() {
   let first = null;
   let second = null;
-
 /*
 Этот блок кода запускает два метода до бесконечности,
 пока не получит число (NaN исключается),
@@ -28,6 +27,7 @@ while (typeof(second) != "number" || isNaN(second) == true) {
     second = null;
     alert('Ай, блять! Не попал! D:')
   }
+
 function FirstNum() {
   /*
   Этот блок кода запрашивает возраст доступа от пользователя, парсит в int
@@ -42,8 +42,6 @@ function FirstNum() {
     console.log('И всё идёт по плану!')
   }
 }
-
-
 function SecondNum() {
   /*
   Этот блок кода запрашивает возраст от пользователя, парсит в int
@@ -56,6 +54,6 @@ function SecondNum() {
   }
   else {
     console.log('И всё идёт по плану!')
+    }
   }
-}
 }
